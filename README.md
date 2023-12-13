@@ -22,10 +22,10 @@ Environment: Choose the operating system, runtime, and runtime version.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 =>
 Define environment variables using Parameter Store:
-DOCKER_REGISTRY_USERNAME: Set to /myapp/docker-credentials/username
-DOCKER_REGISTRY_PASSWORD: Set to /myapp/docker-credentials/password
-DOCKER_REGISTRY_URL: Set to docker.io
-DOCKER_IMAGE_NAME: Set to your specific image name
+- DOCKER_REGISTRY_USERNAME: Set to /myapp/docker-credentials/username
+- DOCKER_REGISTRY_PASSWORD: Set to /myapp/docker-credentials/password
+- DOCKER_REGISTRY_URL: Set to docker.io
+- DOCKER_IMAGE_NAME: Set to your specific image name
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Buildspec.yml
