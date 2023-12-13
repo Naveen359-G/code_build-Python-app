@@ -31,38 +31,7 @@ Define environment variables using Parameter Store:
 Buildspec.yml
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-- version: 0.2
-
-- env:
--  variables:
--    DOCKER_USERNAME: /myapp/docker-credentials/username
--    DOCKER_PASSWORD: /myapp/docker-credentials/password
--    DOCKER_REGISTRY_URL: docker.io
--    DOCKER_IMAGE_NAME: 'your image name'
-
-- phases:
--  install:
--    runtime-versions:
--     python: 3.11
-
-- pre_build:
--   commands:
--     - echo "Installing dependencies..."
--     - pip install -r requirements.txt
-
--  build:
--   commands:
--     - echo "Running tests..."
--     - echo "Logging in to Docker Hub..."
--     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL"
--      - echo "Building Docker image..."
--     - docker build -t "$DOCKER_USERNAME/$DOCKER_IMAGE_NAME:latest" .
--     - echo "Pushing Docker image to Docker Hub..."
--     - docker push "$DOCKER_USERNAME/$DOCKER_IMAGE_NAME:latest"
-
--  post_build:
--    commands:
--     - echo "Build completed successfully!"
+Check the buiildspec.yml from the repository.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
